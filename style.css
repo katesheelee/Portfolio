@@ -44,6 +44,17 @@ h3 {
 	background: #f9f7fe;
 }
 
+.projects {
+	text-align: center;
+	font-family: var(--default-font-family);
+	font-size: 18px;
+	line-height: 27px;
+	margin-top: 127px;
+	margin-bottom: 70px;
+	font-weight: 400px;
+	text-shadow: var(--box-shadow);
+}
+
 .hero {
 	background: #f9f7fe;
 	padding: 160px 20px;
@@ -91,16 +102,24 @@ h3 {
 .about-app {
 	margin-top: 30px;
 	margin-bottom: 50px;
+	font-family: var(--default-font-family);
+	font-weight: 400;
+	color: #272142b2;
+	font-size: 16px;
+	margin-left: 60px;
 }
 
 .link {
 	border-radius: 4px;
-	padding: 20px 15px;
+	padding: 15px 30px;
 	text-decoration: none;
 	text-transform: capitalize;
-	background: var(--primary-color);
-	box-shadow: var(--box-shadow);
-	color: white;
+	background: white;
+	font-family: var(--default-font-family);
+	font-weight: 500px;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	margin-left: 60px;
 }
 
 a:hover {
@@ -108,7 +127,11 @@ a:hover {
 }
 .head {
 	text-align: left;
-	margin-top: 30px;
+	margin-top: 130px;
+	font-family: var(--heading-font-family);
+	font-size: 64px;
+	margin-left: 60px;
+	color: black;
 }
 
 .img-fluid {
