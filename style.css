@@ -1,11 +1,14 @@
 :root {
-	--primary-color: #6c63ff;
+	--primary-color: black;
 	--secondary-color: #f5f2fe;
-	--box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	--box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 	--heading-font-family: "Playfair Display", serif;
 	--default-font-family: "Poppins", sans-serif;
 }
 
+body {
+	background: #fffdfb;
+}
 h1,
 h2,
 h3 {
@@ -16,14 +19,14 @@ h1 {
 	font-size: 96px;
 	font-family: "Playfair Display", serif;
 	font-weight: 700px;
-	color: black;
+	color: var(--primary-color);
 }
 
 h2 {
 	font-size: 36px;
 	font-family: "Poppins", sans-serif;
 	font-weight: bold;
-	color: #272142;
+	color: var(--primary-color);
 }
 
 h3 {
@@ -41,7 +44,7 @@ h3 {
 
 .box {
 	margin-top: 45px;
-	background: #f9f7fe;
+	background: var(--secondary-color);
 }
 
 .projects {
@@ -56,9 +59,12 @@ h3 {
 }
 
 .hero {
-	background: #f9f7fe;
-	padding: 160px 20px;
+	background: rgb(246, 246, 246);
+	padding: 140px 20px;
 	text-align: center;
+	box-shadow: var(--box-shadow);
+	background-image: url("images/bg.jpg");
+	background-size: cover;
 }
 
 .btn-branding {
@@ -66,7 +72,7 @@ h3 {
 	margin-top: 49px;
 	background: var(--primary-color);
 	border-radius: 4px;
-	color: white;
+	color: var(--secondary-color);
 	font-size: 18px;
 	line-height: 27px;
 	padding: 15px 30px;
@@ -107,6 +113,7 @@ h3 {
 	color: #272142b2;
 	font-size: 16px;
 	margin-left: 60px;
+	padding-bottom: 50px;
 }
 
 .link {
@@ -174,5 +181,74 @@ a:hover {
 	.navigation-links a {
 		font-size: 15px;
 		padding: 12px;
+	}
+}
+
+.heading {
+	font-family: var(--heading-font-family);
+	font-size: 64px;
+	color: black;
+	text-align: left;
+}
+.conteiner h3 {
+	font-family: var(--default-font-family);
+	font-size: 19px;
+	text-align: left;
+}
+.conteiner {
+	margin-left: 160px;
+	margin-top: 120px;
+	margin-bottom: 0px;
+}
+.conteiner p {
+	color: #272142b2;
+	text-align: left;
+	margin-right: 50px;
+	margin-bottom: 0px;
+}
+
+.image {
+	width: 380px;
+	box-shadow: var(--box-shadow);
+}
+
+.link-project {
+	border-radius: 4px;
+	padding: 15px 15px;
+	text-decoration: none;
+	text-transform: capitalize;
+	background: white;
+	font-family: var(--default-font-family);
+	font-weight: 500px;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+	.heading {
+		font-size: 32px;
+		text-align: center;
+	}
+	.conteiner h3 {
+		text-align: center;
+		font-size: 16px;
+	}
+	.conteiner p {
+		text-align: center;
+	}
+	.conteiner {
+		margin-left: 15px;
+	}
+	.image {
+		width: 250px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 25px;
+		margin-bottom: 65px;
+	}
+
+	.link-project {
+		margin-left: 105px;
 	}
 }
