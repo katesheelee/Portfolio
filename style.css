@@ -42,23 +42,17 @@ h3 {
 	text-align: center;
 }
 
-.box {
-	margin-top: 45px;
-	background: var(--secondary-color);
-}
-
 .projects {
 	text-align: center;
 	font-family: var(--default-font-family);
 	font-size: 18px;
 	line-height: 27px;
-	margin-top: 80px;
+	margin-top: -59px;
 	font-weight: 400px;
 	text-shadow: var(--box-shadow);
 }
 
 .hero {
-	margin-top: 20px;
 	background: white;
 	text-align: center;
 	background: url(images/bac.png);
@@ -66,24 +60,11 @@ h3 {
 }
 .bg {
 	background: url(images/back.png);
-  background-size: contain;
+	background-size: contain;
 }
 .welcome-section {
 	margin-top: 120px;
 	font-size: 54px;
-}
-
-.section {
-	background: url(images/back.png);
-	background-size: contain;
-}
-
-
-.navbar-collapse {
-	background: black;
-	margin-left: -20px;
-	margin-right: -20px;
-	margin-top: -5px;
 }
 
 .btn-branding {
@@ -95,12 +76,6 @@ h3 {
 	font-size: 18px;
 	line-height: 27px;
 	padding: 15px 30px;
-}
-
-.homepage-link {
-	color: var(--primary-color);
-	text-align: center;
-	display: block;
 }
 
 .about-paragraphs {
@@ -116,7 +91,8 @@ h3 {
 .weather-image {
 	width: 550px;
 	margin-top: 90px;
-  width: 600px;
+	width: 600px;
+	position: unset;
 }
 
 .email-link {
@@ -140,8 +116,7 @@ h3 {
 	font-size: 16px;
 	margin-left: 50px;
 	padding-bottom: 50px;
-  max-width: 500px;
-
+	max-width: 500px;
 }
 
 .link {
@@ -173,10 +148,6 @@ a:hover {
 	width: 440px;
 	margin-top: 130px;
 	margin-left: 170px;
-}
-.navbar {
-	margin-top: -50px;
-	max-width: 100%;
 }
 
 .image {
@@ -227,8 +198,6 @@ a:hover {
 }
 .conteiner {
 	margin-left: 160px;
-	margin-top: 120px;
-	margin-bottom: 0px;
 }
 .conteiner p {
 	color: black;
@@ -239,6 +208,11 @@ a:hover {
 
 .image {
 	width: 580px;
+	margin-top: 40px;
+}
+
+.collapse{
+  background-color:white;
 }
 
 .link-project {
@@ -276,22 +250,32 @@ a:hover {
 		width: 250px;
 		display: block;
 		margin: 0 auto;
-		margin-top: 25px;
+		margin-top: 15px;
 		margin-bottom: 65px;
 	}
 
 	.link-project {
-		margin-left: 105px;
+		display: block;
+		margin: 0 auto;
 		margin-top: 60px;
 	}
 }
 
 @media (max-width: 1100px) {
-	.link-project {
-		margin-left: 10px;
+  .link-project {
+		display: block;
+		margin: 0 auto;
 		margin-top: 60px;
 	}
 }
 
+.scroll-tracker {
+	height: 5px;
+	background-color: green;
+	position: fixed;
+	inset: 0 0 auto;
+}
 
-
+.aboutMe-section {
+	margin-top: 120px;
+}
