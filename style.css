@@ -109,9 +109,6 @@ h3 {
 	text-decoration: none;
 }
 
-.email-link:hover {
-	text-decoration: underline;
-}
 
 .about-app {
 	margin-top: 30px;
@@ -317,18 +314,6 @@ footer {
 	margin-top: 50px;
 }
 
-header {
-	margin-top: 90px;
-}
-.myWorks {
-	margin-top: 170px;
-	width: 600px;
-}
-
-.picture {
-	margin-top: 170px;
-	width: 400px;
-}
 .sentance {
 	text-align: center;
 	font-size: 29px;
@@ -337,11 +322,6 @@ header {
 	text-shadow: var(--box-shadow);
 }
 
-.description {
-	font-size: 15px;
-	margin-top: 10px;
-	font-family: var(--default-font-family);
-}
 .link:hover,
 .link-project:hover {
 	color: black;
@@ -356,4 +336,46 @@ header {
 	max-width: 900px;
 	margin-left: 50px;
 
+}
+
+p{
+	font-family: var(--default-font-family);
+	font-weight: 200;
+}
+
+@media(max-width:600px){
+	h1.head{
+		font-size: 26px;
+
+	}
+	a.link{
+		margin: 15px;
+	}
+	
+	a.link-project{
+		margin: 45px;s
+	}
+
+	.icons{
+		margin: 40px;
+	}
+	.sentance{
+		font-size: 20px;
+	}
+	h2.head{
+		font-size: 45px;
+	}
+
+	h1.welcome-section{
+		font-size: 45px;
+	}
+	div.box{
+		display: block;
+		margin: 30px;
+	}
+
+	.img{
+		display: block;
+		margin: 90px;
+	}
 }
