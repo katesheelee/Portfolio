@@ -76,6 +76,12 @@ h3 {
 	font-size: 18px;
 	line-height: 27px;
 	padding: 15px 30px;
+	transition: 500ms ease-in-out;
+}
+.btn-branding:hover {
+	background: white;
+	color: black;
+	border-color: black;
 }
 
 .about-paragraphs {
@@ -130,6 +136,7 @@ h3 {
 	color: #ec615b;
 	border: 1px solid #ec615b;
 	margin-left: 60px;
+	transition: 500ms ease-in-out;
 }
 
 a:hover {
@@ -211,8 +218,8 @@ a:hover {
 	margin-top: 40px;
 }
 
-.collapse{
-  background-color:white;
+.collapse {
+	background-color: white;
 }
 
 .link-project {
@@ -228,6 +235,7 @@ a:hover {
 	margin-left: 10px;
 	margin-top: -150px;
 	margin-bottom: 150px;
+	transition: 500ms ease-in-out;
 }
 
 @media (max-width: 600px) {
@@ -262,7 +270,7 @@ a:hover {
 }
 
 @media (max-width: 1100px) {
-  .link-project {
+	.link-project {
 		display: block;
 		margin: 0 auto;
 		margin-top: 60px;
@@ -271,11 +279,81 @@ a:hover {
 
 .scroll-tracker {
 	height: 5px;
-	background-color: green;
+	background-color: whitesmoke;
 	position: fixed;
 	inset: 0 0 auto;
 }
 
 .aboutMe-section {
 	margin-top: 120px;
+}
+
+footer {
+	margin-top: 170px;
+	text-align: center;
+	background: url(images/bac.png);
+	background-size: 500px;
+}
+
+.mygmail {
+	color: black;
+	font-size: 18px;
+	font-family: var(--default-font-family);
+	transition: 500ms ease-in-out;
+}
+
+.icon {
+	font-size: 28px;
+	margin: 10px;
+	color: black;
+	transition: 500ms ease-in-out;
+}
+.mygmail:hover,
+.icon:hover {
+	color: #ec615b;
+}
+
+.icons {
+	margin-top: 50px;
+}
+
+header {
+	margin-top: 90px;
+}
+.myWorks {
+	margin-top: 170px;
+	width: 600px;
+}
+
+.picture {
+	margin-top: 170px;
+	width: 400px;
+}
+.sentance {
+	text-align: center;
+	font-size: 29px;
+	font-family: var(--default-font-family);
+	margin-top: 100px;
+	text-shadow: var(--box-shadow);
+}
+
+.description {
+	font-size: 15px;
+	margin-top: 10px;
+	font-family: var(--default-font-family);
+}
+.link:hover,
+.link-project:hover {
+	color: black;
+	border-color: black;
+}
+
+.box{
+	border: 2px solid black;
+	padding: 30px;
+	border-radius: 7px;
+	margin-top: 70px;
+	max-width: 900px;
+	margin-left: 50px;
+
 }
