@@ -1,3 +1,7 @@
+
+
+
+
 import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
 
 let scrollTracker = document.querySelector(".scroll-tracker");
@@ -20,26 +24,25 @@ scrollTracker.animate(
 
 let animatedImages = document.querySelectorAll(".rotate");
 
-animatedImages.forEach(image=>{
-let animatedImageTimeline = new ScrollTimeline({
-	scrollOffsets: [
-		{ target: image, edge: "end", threshold: "0" },
-		{ target: image, edge: "start", threshold: "1" },
-	],
-})
-image.animate(
-	{
-		transform: [
-			" perspective(1000px) rotateX(30deg)",
-			"perspective(1000px)rotate(0)",
+animatedImages.forEach((image) => {
+	let animatedImageTimeline = new ScrollTimeline({
+		scrollOffsets: [
+			{ target: image, edge: "end", threshold: "0" },
+			{ target: image, edge: "start", threshold: "1" },
 		],
-		opacity: ["0", "1"],
-	},
-	{
-		duration: 1,
-		timeline: animatedImageTimeline,
-	}
-);
-
+	});
+	image.animate(
+		{
+			transform: [
+				" perspective(1000px) rotateX(30deg)",
+				"perspective(1000px)rotate(0)",
+			],
+			opacity: ["0", "1"],
+		},
+		{
+			duration: 1,
+			timeline: animatedImageTimeline,
+		}
+	);
 });
 
